@@ -742,5 +742,26 @@ a {
 
 .vtpw-amount {
   position: relative;
+  left:-1rem;
+  top:2rem;
   padding: 25%;
+}
+.votepow{
+  display: grid;
+}
+@media screen and (min-width:600px){
+  .vtpw-btn{
+    left: 20%;
+  }
+  .votepow{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width:800px){
+  .vtpw-btn{
+    left: 20%;
+  }
+  .votepow{
+    grid-template-columns: repeat(4, 1fr);
+  }
 }

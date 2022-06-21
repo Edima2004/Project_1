@@ -573,6 +573,7 @@ a {
 
 .donate-btn {
   margin: 2rem auto;
+  max-width: 500px;
 }
 
 .donate-word {

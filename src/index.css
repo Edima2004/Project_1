@@ -796,11 +796,11 @@ a {
   display: grid;
 }
 
-/*@media screen and (max-width:500px) {
-  .vtpw-head{
-    
+@media screen and (max-width:500px) {
+  .vtpw-btn{
+    left:26%;
   }
-}*/
+}
 
 @media screen and (min-width:600px){
   .vtpw-btn{

@@ -22,7 +22,7 @@ const Login = () => {
         <form action="">
           <div className="form-control">
             <p>
-              <label htmlFor="email">Email Address</label>
+              <label htmlFor="email">EmailAddress</label>
             </p>
             <input type="email" />
           </div>

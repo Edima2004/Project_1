@@ -37,13 +37,13 @@ const CreateAccount = () => {
           </div>
           <div className="form-control">
             <p>
-              <label htmlFor="">Email Address</label>
+              <label htmlFor="">EmailAddress</label>
             </p>
             <input type="email" />
           </div>
           <div className="form-control">
             <p>
-              <label htmlFor="">Phone Number</label>
+              <label htmlFor="">PhoneNumber</label>
             </p>
             <input type="number" />
           </div>

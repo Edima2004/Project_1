@@ -182,11 +182,13 @@ div h1 {
 .home-p {
   display: flex;
   justify-content: center;
-
 }
 
+
 .arrow {
-  align-self: flex-end;
+position: absolute;
+padding-left: 1rem;
+
 }
 
 .home-left-logo {
@@ -475,6 +477,14 @@ a {
   gap: 1rem;
 }
 
+@media screen and (max-width:500px) {
+  .da-article{
+    width:350px;
+    height: 350px;
+  }
+
+}
+
 @media screen and (min-width:850px) {
   .da-all {
     grid-template-columns: repeat(2, 1fr);
@@ -507,6 +517,12 @@ a {
   grid-template-columns: repeat(2, 1fr);
 }
 
+@media screen and (max-width:500px) {
+  .vc-section{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 @media screen and (min-width:700px) {
   .vc-section {
     grid-template-columns: repeat(3, 1fr);
@@ -534,6 +550,12 @@ a {
   padding: 1rem 2rem;
   border-radius: 5px;
   border: none;
+}
+
+@media screen and (max-width:500px) {
+  .vc-section{
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 /** Donation  */
@@ -578,7 +600,13 @@ a {
 
 .donate-word {
   margin: 2rem auto;
+
 }
+.donate-p{
+    line-height: 1.5rem;
+      max-width: 600px;
+}
+
 
 /** Celebrated Techies  */
 
@@ -603,6 +631,14 @@ a {
 .cel {
   display: grid;
   gap: 1rem;
+}
+
+@media screen and (max-width:500px) {
+  .container{
+    height:250px;
+    width:250px;
+
+  }
 }
 
 @media screen and (min-width:800px) {
@@ -665,6 +701,10 @@ a {
 .contech-bottom {
   margin: 2rem auto;
 
+}
+
+.contech-bottom p{
+  line-height: 1.5rem;
 }
 
 .contech-bottom h2 {

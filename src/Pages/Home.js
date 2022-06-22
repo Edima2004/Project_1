@@ -11,7 +11,7 @@ const Home = () => {
           {" "}
           <input
             className="home-input"
-            type="text"
+            type="search"
             placeholder="Nominee's Name"
           />
           <button className="home-search">Search</button>
@@ -20,7 +20,9 @@ const Home = () => {
           <span>
             View all Categories{" "}
             <span className="arrow">
-              <img src="../next-arrow.png" alt="arrow" />
+              <a href="/categories">
+                <img src="../next-arrow.png" alt="arrow" />
+              </a>
             </span>
           </span>
         </p>

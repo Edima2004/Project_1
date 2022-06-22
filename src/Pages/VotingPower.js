@@ -20,7 +20,7 @@ const VotingPower = () => {
                      <h2>{votes} <br/><span className="votes">votes</span></h2> 
                      
                   </div>
-                  <h2 className='vtpw-amount'><BsCurrencyDollar/>{amount}</h2>
+                  <h2 className='vtpw-amount'><div><BsCurrencyDollar/></div><div>{amount}</div></h2>
                   <button className='vtpw-btn' onClick={showHideMsg}>Buy</button>
                </section>
             )

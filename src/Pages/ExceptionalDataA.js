@@ -29,7 +29,7 @@ const ExceptionalDataA = () => {
         {exceptionalDA.map((da) => {
           const { Name, votes, plus, id } = da;
           return (
-            <article key={id} className="da-article da-center">
+            <article key={id} className="da-article da-center e-da">
               <div className="da-img"></div>
               <h3>{Name}</h3>
               <h4>{votes} votes</h4>

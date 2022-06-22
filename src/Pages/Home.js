@@ -20,14 +20,14 @@ const Home = () => {
           <span>
             View all Categories{" "}
             <span className="arrow">
-              <a href="/categories">
+              <a href="/votingCategories">
                 <img src="../next-arrow.png" alt="arrow" />
               </a>
             </span>
           </span>
         </p>
       </div>
-      <div className="home-footer ">
+      <div className="home-footer home-space-bot">
         <img
           className="home_target donate-img noShow"
           src="../home_top_all_back.png"

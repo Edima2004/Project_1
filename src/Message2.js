@@ -11,7 +11,7 @@ const Message2 = () => {
         alt="cancel"
         onClick={showHideMsg}
       />
-      <img src="../rocket.png" alt="thumbs" />
+      <img src="../rocket.png" alt="rocket" />
       <h2>Awesome!</h2>
       <p>You have successfully increased your voting power,</p>
       <p>Go and make your favorite candidate win!</p>

@@ -1,8 +1,11 @@
 import React from "react";
 
 import {Link} from 'react-router-dom'
+import { useGlobalContext } from "../context";
 
 const CreateAccount = () => {
+  const {signUp, handleChangeSign, handleSubmitSign, formErrors}= useGlobalContext()
+
   return (
     <section className="create-acc">
       <div className="create-acc-top">
@@ -20,39 +23,44 @@ const CreateAccount = () => {
           <img src="google.png" alt="google" /> Continue with Google
         </button>
         <div className="create-acc line">
-          <span>OR</span>
+          <span className="or">OR</span>
         </div>
-        <form action="" className="form-group">
+        <form action="submit" className="form-group">
           <div className="form-control">
             <p>
               <label htmlFor="firstName">FirstName</label>
             </p>
-            <input type="text" />
+            <input type="text"  name="signFirstName" value={signUp.signFirstName} onChange={handleChangeSign}/>
           </div>
+          <p className="error-p">{formErrors.fName}</p>
           <div className="form-control">
             <p>
               <label htmlFor="">LastName</label>
             </p>
-            <input type="text" />
+            <input type="text" name="signLastName" value={signUp.signLastName} onChange={handleChangeSign}/>
           </div>
+          <p className="error-p">{formErrors.lName}</p>
           <div className="form-control">
             <p>
               <label htmlFor="">EmailAddress</label>
             </p>
-            <input type="email" />
+            <input type="email" name="signEmail" value={signUp.signEmail} onChange={handleChangeSign}/>
           </div>
+          <p className="error-p"> {formErrors.email}</p>
           <div className="form-control">
             <p>
               <label htmlFor="">PhoneNumber</label>
             </p>
-            <input type="number" />
+            <input type="number" name="signNumber" value={signUp.signNumber} onChange={handleChangeSign}/>
           </div>
+          <p className="error-p">{formErrors.num}</p>
           <div className="form-control">
             <p>
               <label htmlFor="SetPassword">SetPassword</label>
             </p>
-            <input type="password" />
+            <input type="password" name="signPassword" value={signUp.signPassword} onChange={handleChangeSign}/>
           </div>
+          <p className="error-p">{formErrors.psw}</p>
           <div className="form-control">
             <label htmlFor="gender">Gender</label>
             <select className="form-select">
@@ -68,7 +76,7 @@ const CreateAccount = () => {
             <span className="sign"> Privacy Policy</span>
           </p>
         </h5>
-        <button type="submit" className="btn-create-acc">
+        <button type="submit" onClick={handleSubmitSign} className="btn-create-acc">
           Create my account
         </button>
         <div className="bottom"></div>

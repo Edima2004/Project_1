@@ -18,7 +18,7 @@ const VotingCategories = () => {
          {votingCategory.map((votingCategory) => {
            const { Name, id } = votingCategory;
            return (
-             <article key={id} className="da-article da-center vc-article">
+             <article key={id} className="da-article da-articlenew da-center vc-article">
                <div>
                  <img src='../icon.png' alt="name" />
                </div>

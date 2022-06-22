@@ -16,7 +16,7 @@ const Message2 = () => {
       <p>You have successfully increased your voting power,</p>
       <p>Go and make your favorite candidate win!</p>
       <button className="btn-create-acc" onClick={showHideMsg}>
-        <a href="/votingCategory">Go to voting page</a>
+        <a href="/votingCategories">Go to voting page</a>
       </button>
     </div>
   );

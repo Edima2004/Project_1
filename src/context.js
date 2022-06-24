@@ -35,6 +35,9 @@ const AppProvider = ({ children }) => {
     if (!values.logPassword) {
       errors.logPassword = "password is required!";
     }
+    if (values.logPassword && values.logPassword.length < 7) {
+      errors.logPassword = "password must contain at least 7 characters";
+    }
     return errors;
   };
 
@@ -54,6 +57,9 @@ const AppProvider = ({ children }) => {
     }
     if (!values.signPassword) {
       errors.psw = "field is required!";
+    }
+    if (values.signPassword && values.signPassword.length < 7){
+      errors.psw = "password must contain at least 7 characters"
     }
     return errors;
   };
